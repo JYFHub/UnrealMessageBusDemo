@@ -2,6 +2,7 @@
 
 #include "MessagingServer.h"
 #include "RemoteJumpComponent.h"
+#include "MessageEndpointBuilder.h"
 
 // Sets default values for this component's properties
 URemoteJumpComponent::URemoteJumpComponent()

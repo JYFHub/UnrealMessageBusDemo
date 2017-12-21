@@ -6,6 +6,6 @@ public class MessagingServer : ModuleRules
 {
 	public MessagingServer(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Messaging" });
 	}
 }

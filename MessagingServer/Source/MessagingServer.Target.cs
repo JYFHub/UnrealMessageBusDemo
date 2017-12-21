@@ -8,18 +8,19 @@ public class MessagingServerTarget : TargetRules
 	public MessagingServerTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
+		ExtraModuleNames.Add("MessagingServer");
 	}
 
 	//
 	// TargetRules interface.
 	//
 
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.Add("MessagingServer");
-	}
+	// public override void SetupBinaries(
+		// TargetInfo Target,
+		// ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
+		// ref List<string> OutExtraModuleNames
+		// )
+	// {
+		// //OutExtraModuleNames.Add("MessagingServer");
+	// }
 }

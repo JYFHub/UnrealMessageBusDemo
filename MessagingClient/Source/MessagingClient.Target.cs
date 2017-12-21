@@ -8,18 +8,19 @@ public class MessagingClientTarget : TargetRules
 	public MessagingClientTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
+		ExtraModuleNames.AddRange( new string[] { "MessagingClient" } );
 	}
 
 	//
 	// TargetRules interface.
 	//
 
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.AddRange( new string[] { "MessagingClient" } );
-	}
+	// public override void SetupBinaries(
+		// TargetInfo Target,
+		// ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
+		// ref List<string> OutExtraModuleNames
+		// )
+	// {
+		// Out
+	// }
 }

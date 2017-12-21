@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Components/ActorComponent.h"
-#include "Messaging.h"
+#include "MessageEndpoint.h"
 #include "RemoteJumpTriggerComponent.generated.h"
 
 
